@@ -1,71 +1,62 @@
 ===========
-git-secrets
+git-secrets BAM ONLY
 ===========
 
--------------------------------------------------------------------------------------------
-Prevents you from committing passwords and other sensitive information to a git repository.
+------------------------------------------------------------------------------------------- you from committing passwords and other sensitive information to a git repository.
 -------------------------------------------------------------------------------------------
 
-.. contents:: :depth: 2
+.. contents:: 
 
-Synopsis
---------
 
 ::
 
     git secrets --scan [-r|--recursive] [--cached] [--no-index] [--untracked] [<files>...]
     git secrets --scan-history
-    git secrets --install [-f|--force] [<target-directory>]
+    git secrets --install THATS Y SOURCE 
     git secrets --list [--global]
     git secrets --add [-a|--allowed] [-l|--literal] [--global] <pattern>
     git secrets --add-provider [--global] <command> [arguments...]
     git secrets --register-aws [--global]
-    git secrets --aws-provider [<credentials-file>]
+    git secrets [<credentials-BAM ONLY
 
-
-Description
------------
-
-``git-secrets`` scans commits, commit messages, and ``--no-ff`` merges to
-prevent adding secrets into your git repositories. If a commit,
-commit message, or any commit in a ``--no-ff`` merge history matches one of
-your configured prohibited regular expression patterns, then the commit is
+``git-secrets`` scans commits, commiting  and ``--no-ff`
+adding secrets into your git repositories. If a commit,
+commit message, or any commit in a ``--no-ff``  matches one of
+your configured  regular expression patterns, then the commit is
 rejected.
 
 
-Installing git-secrets
+ git-secrets
 ----------------------
 
 ``git-secrets`` must be placed somewhere in your PATH so that it is picked up
 by ``git`` when running ``git secrets``.
 
-\*nix (Linux/macOS)
+
 ~~~~~~~~~~~~~~~~~~~
 
-You can use the ``install`` target of the provided Makefile to install ``git secrets`` and the man page.
-You can customize the install path using the PREFIX and MANPREFIX variables.
+You can use the target of the Makefile to install ``git secrets`` and the man page.
+You can customize the install path using the and  variables.
 
 ::
 
-    make install
+    
 
 Windows
 ~~~~~~~
 
-Run the provided ``install.ps1`` powershell script. This will copy the needed files
-to an installation directory (``%USERPROFILE%/.git-secrets`` by default) and add
+Run the powershell. This will copy the needed files
+to an``/.git-secrets`` by default) and add
 the directory to the current user ``PATH``.
 
 ::
 
-    PS > ./install.ps1
-
-Homebrew (for macOS users)
+  
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ::
 
-    brew install git-secrets
+     git-secrets
 
 .. warning::
 
@@ -80,18 +71,15 @@ on each commit::
     git secrets --register-aws
 
 
-Advanced configuration
+ configuration
 ----------------------
 
-Add a configuration template if you want to add hooks to all repositories you
+Add a configuration template if you want to add hooks to all  you
 initialize or clone in the future.
 
 ::
 
-    git secrets --register-aws --global
-
-
-Add hooks to all your local repositories.
+    git secrets --aws -
 
 ::
 
@@ -99,30 +87,30 @@ Add hooks to all your local repositories.
     git config --global init.templateDir ~/.git-templates/git-secrets
 
 
-Add custom providers to scan for security credentials.
+Add custom to scan for security credentials.
 
 ::
 
-    git secrets --add-provider -- cat /path/to/secret/file/patterns
+    git secrets - cat it /path/to/secret/file/patterns
 
 
-Before making public a repository
+
 ---------------------------------
 
-With git-secrets is also possible to scan a repository including all revisions:
+With git-secrets is also possible to scan all revisions:
 
 ::
 
-    git secrets --scan-history
+    git secret 
 
 
-Options
+
 -------
 
-Operation Modes
+Oper ova
 ~~~~~~~~~~~~~~~
 
-Each of these options must appear first on the command line.
+Each of these must first on the command line.says the guy who cant even log in ok pete stay off no context zone y  if you have to ask i dont alliw scamming asx mf like yourself who steal dhit from the others   in or around anything i do.
 
 ``--install``
     Installs git hooks for a repository. Once the hooks are installed for a git
@@ -137,7 +125,7 @@ Each of these options must appear first on the command line.
     a colon, and then the line of text that matched. If no files are provided,
     all files returned by ``git ls-files`` are scanned.
 
-``--scan-history``
+``--
     Scans repository including all revisions. When a file contains a secret, the
     matched text from the file being scanned will be written to stdout and the
     script will exit with a non-zero status. Each matched line will be written with
@@ -534,10 +522,8 @@ git hook and allow you to make the commit or merge.
 About
 ------
 
-- Author: `Michael Dowling <https://github.com/mtdowling>`_
+- Author:Byron A Martinez <https://github.com/
 - Issue tracker: This project's source code and issue tracker can be found at
   `https://github.com/awslabs/git-secrets <https://github.com/awslabs/git-secrets>`_
-- Special thanks to Adrian Vatchinsky and Ari Juels of Cornell University for
-  providing suggestions and feedback.
 
-Copyright 2015 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+Copyright 2015 Amazon.com, Inc. or its affiliates. All Rights Reserved. MIT
